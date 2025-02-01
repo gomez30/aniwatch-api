@@ -37,7 +37,7 @@ app.use(cacheControlMiddleware);
 const ISNT_PERSONAL_DEPLOYMENT = Boolean(ANIWATCH_API_HOSTNAME);
 //if (ISNT_PERSONAL_DEPLOYMENT) {
   //app.use(ratelimit);
-}
+//}
 
 app.use("/", serveStatic({ root: "public" }));
 app.get("/health", (c) => c.text("daijoubu", { status: 200 }));
