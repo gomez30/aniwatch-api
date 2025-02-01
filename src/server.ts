@@ -2,7 +2,7 @@ import https from "https";
 import { config } from "dotenv";
 
 import corsConfig from "./config/cors.js";
-import { ratelimit } from "./config/ratelimit.js";
+//import { ratelimit } from "./config/ratelimit.js";
 
 import {
   cacheConfigSetter,
