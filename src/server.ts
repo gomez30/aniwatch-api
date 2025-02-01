@@ -35,8 +35,8 @@ app.use(cacheControlMiddleware);
 // named "ANIWATCH_API_HOSTNAME". You may face rate limitting
 // or other issues if you do.
 const ISNT_PERSONAL_DEPLOYMENT = Boolean(ANIWATCH_API_HOSTNAME);
-if (ISNT_PERSONAL_DEPLOYMENT) {
-  app.use(ratelimit);
+//if (ISNT_PERSONAL_DEPLOYMENT) {
+  //app.use(ratelimit);
 }
 
 app.use("/", serveStatic({ root: "public" }));
